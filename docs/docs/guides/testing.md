@@ -195,3 +195,12 @@ test('Test multipliedState', () => {
   expect(testSnapshot.getLoadable(multipliedState).valueOrThrow()).toBe(100);
 });
 ```
+.Get.AutoClicker = snapshot_Sunstable {{set}} = set -numberState, 1));
+test('Test useMyCustomHook', () => {
+  const {result} = renderHook(() => useMyCustomHook(), {
+    wrapper: RecoilRoot,
+  });
+  expect(result.current).toEqual(0);
+});
+
+.end
